@@ -1,0 +1,21 @@
+.cardimg{
+    width: 250px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tile{
+    text-align: center;
+}
+
+.card { 
+    width: 50%;
+    height: 500px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex items-center justify-center min-h-[40vh]">
+
+        <div class="relative">
+
+          <button class="text-9xl bg-blue-500 text-white px-4 py-2 rounded" onclick="toggleMenu()">School</button>
+    
+          <div id="dropdown" style="position: absolute; top: 150px; left: 120px;" class="absolute mt-2 w-40 bg-white border rounded shadow hidden">
+            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="setec()">Setec</a>
+            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="rupp()">RUPP</a>
+            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="ace()">ACE</a>
+          </div>
+        </div>
+    </div>
+
+    
+          <div class="link hidden">
+
+            <!-- ICON with Link -->
+            <div class=" flex justify-center mb-9   ">
+              <div class="flex px-4">
+                <img src="./img/communication (1).png" alt="" class=" w-20 h-20">
+                <a id="facebook"  href="" class= "social text-center my-auto pl-4">Facebook</a>
+              </div>
+
+              <div class="flex px-4">
+                <img src="./img/telegram (1).png" alt="" class=" w-20 h-20">
+                <a id="telegram" href="" class= "social text-center my-auto pl-4"></a>
+              </div>
+
+              <div class="flex px-4">
+                <img src="./img/youtube.png" alt="" class="w-20 h-20">
+                <a id="youtube" href="" class="social text-center my-auto pl-4">Youtube</a>
+            </div>
+            
+
+              <!-- END ICON with Link -->
+
+              <!-- Check Blank Page -->
+              <div  class="flex">
+                <button onclick="addBlank()" class="my-auto text-center py-4 px-4 bg-slate-400 rounded-xl text-white font-semibold text-2xl">Blank Page</button>
+                  <img id="addCheck" class="hidden my-auto w-9 h-9 ml-4" src="./img/check.png" alt="" >
+              </div>
+              <!-- End Blank Page -->
+            </div>
+            
+          </div>
+          <div class="card mx-auto">
+            <!-- Setec -->
+            <div id="setec" class="hidden text-center">
+              <h1 class="text-4xl font-semibold mb-10 border-4 ">Setec</h1>
+              <div class="flex">
+                <img src="./img/setecschool.png" alt="Setec Image" class=" w-[1000px] h-[600px]  mx-auto overflow-hidden">
+                <p class="my-auto text-center items-center justify-center text-lg p-5">At SETEC INSTITUTE, we conduct up-to-date degree programs to equip our students with skills that companies nowadays are looking for. Other then designing the programs with important Management units like </p>
+              </div>
+            </div>
+
+            <!-- Rupp -->
+            <div id="rupp" class="hidden text-center">
+                <h1 class="text-4xl font-semibold mb-10 border-4 ">RUPP</h1>
+                <div class="flex">
+                  <img class="overflow-hidden w-[1000px] h-[600px]   mx-auto" src="./img/ruppschool.png" alt="Setec Image" class="mx-auto">
+                  <p class="my-auto text-center items-center justify-center">RUPP has over 420 full-time staff. All of its 294 academic staff hold tertiary qualifications, including 24 PhDs and 132 Master's degrees. They are supported by 140 administrative and maintenance staff.</p>
+                </div>
+            </div>
+
+            <!-- ACE -->
+            <div id="ace" class="hidden text-center">
+                <h1 class="text-4xl font-semibold mb-10 border-4 ">ACE</h1>
+                <div class="flex">
+                  <img class="overflow-hidden
+                   w-[1000px] h-[600px] mx-auto" src="./img/aceschool.png" alt="Setec Image" class="mx-auto">
+                  <p class="my-auto text-center items-center justify-center">IDP Education has over 45 years of experience in international student placement service with over 400,000 students placed into quality institutions in Australia, the United Kingdom, the United States of America, Canada and New Zealand</p>
+                </div>
+            </div>
+          </div>
+          
+    
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
