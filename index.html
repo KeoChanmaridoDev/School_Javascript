@@ -9,51 +9,38 @@
 </head>
 <body>
     <div class="flex items-center justify-center min-h-[40vh]">
+        <div>
+          <div class="relative">
 
-        <div class="relative">
-
-          <button class="text-9xl bg-blue-500 text-white px-4 py-2 rounded" onclick="toggleMenu()">School</button>
-    
-          <div id="dropdown" style="position: absolute; top: 150px; left: 120px;" class="absolute mt-2 w-40 bg-white border rounded shadow hidden">
-            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="setec()">Setec</a>
-            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="rupp()">RUPP</a>
-            <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="ace()">ACE</a>
+            <button class="text-9xl bg-blue-500 text-white px-4 py-2 rounded-3xl" onclick="toggleMenu()">School</button>
+      
+            <div id="dropdown" style="position: absolute; top: 150px; left: 120px;" class="absolute mt-2 w-40 bg-white border rounded shadow hidden">
+              <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="setec()">Setec</a>
+              <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="rupp()">RUPP</a>
+              <a href="#" class="text-3xl block px-4 py-2 hover:bg-gray-100" onclick="ace()">ACE</a>
+            </div>
           </div>
         </div>
-    </div>
 
-    
-          <div class="link hidden">
+        <div id="social-btn" class="ml-10 hidden">
+          <div class="relative">
+            <button class="text-9xl bg-blue-500 text-white px-4 py-2 rounded-3xl" onclick="toggleMenu1()">Social</button>
 
-            <!-- ICON with Link -->
-            <div class=" flex justify-center mb-9   ">
-              <div class="flex px-4">
-                <img src="./img/communication (1).png" alt="" class=" w-20 h-20">
-                <a id="facebook"  href="" class= "social text-center my-auto pl-4">Facebook</a>
-              </div>
-
-              <div class="flex px-4">
-                <img src="./img/telegram (1).png" alt="" class=" w-20 h-20">
-                <a id="telegram" href="" class= "social text-center my-auto pl-4"></a>
-              </div>
-
-              <div class="flex px-4">
-                <img src="./img/youtube.png" alt="" class="w-20 h-20">
-                <a id="youtube" href="" class="social text-center my-auto pl-4">Youtube</a>
+            <div id="social" style="position: absolute; top: 150px; left: 120px;" class="absolute mt-2 w-40 bg-white border rounded shadow hidden">
+              <a id="facebook" class="social text-2xl block px-4 py-2 hover:bg-gray-100 href="#">Facebook</a>
+              <a id="telegram" class="social text-1xl font-semibold block px-4 py-2 hover:bg-gray-100 href="#">Telegram</a>
+              <a id="youtube" class="social text-2xl block px-4 py-2 hover:bg-gray-100 href="#">Youtube </a>
             </div>
-            
-
-              <!-- END ICON with Link -->
-
-              <!-- Check Blank Page -->
-              <div  class="flex">
-                <button onclick="addBlank()" class="my-auto text-center py-4 px-4 bg-slate-400 rounded-xl text-white font-semibold text-2xl">Blank Page</button>
-                  <img id="addCheck" class="hidden my-auto w-9 h-9 ml-4" src="./img/check.png" alt="" >
-              </div>
-              <!-- End Blank Page -->
-            </div>
-            
           </div>
+        </div>
+
+        <div id="blank" class="hidden ml-10 ">
+          <div class="flex">
+            <button onclick="addBlank()" class="my-auto text-center py-4 px-4 bg-slate-400 rounded-xl text-white font-semibold text-2xl">Blank Page</button>
+            <img id="addCheck" class="hidden my-auto w-9 h-9 ml-4" src="./img/check.png" alt="" >
+          </div>
+        </div>
+    </div>  
           <div class="card mx-auto">
             <!-- Setec -->
             <div id="setec" class="hidden text-center">
@@ -84,7 +71,7 @@
             </div>
           </div>
           
-    
+
 
 
     <script src="./index.js"></script>

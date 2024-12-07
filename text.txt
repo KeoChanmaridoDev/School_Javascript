@@ -1,0 +1,31 @@
+          <div class="link hidden">
+
+            <!-- ICON with Link -->
+            <div class=" flex justify-center mb-9   ">
+              <div class="flex px-4">
+                <img src="./img/communication (1).png" alt="" class=" w-20 h-20">
+                <a id="facebook"  href="" class= "social text-center my-auto pl-4">Facebook</a>
+              </div>
+
+              <div class="flex px-4">
+                <img src="./img/telegram (1).png" alt="" class=" w-20 h-20">
+                <a id="telegram" href="" class= "social text-center my-auto pl-4"></a>
+              </div>
+
+              <div class="flex px-4">
+                <img src="./img/youtube.png" alt="" class="w-20 h-20">
+                <a id="youtube" href="" class="social text-center my-auto pl-4">Youtube</a>
+            </div>
+            
+
+              <!-- END ICON with Link -->
+
+              <!-- Check Blank Page -->
+              <div  class="flex">
+                <button onclick="addBlank()" class="my-auto text-center py-4 px-4 bg-slate-400 rounded-xl text-white font-semibold text-2xl">Blank Page</button>
+                  <img id="addCheck" class="hidden my-auto w-9 h-9 ml-4" src="./img/check.png" alt="" >
+              </div>
+              <!-- End Blank Page -->
+            </div>
+            
+          </div>
